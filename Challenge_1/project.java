@@ -146,7 +146,6 @@ public class project {
                             System.out.println("(input 0 untuk kembali)");
                             System.out.print("Pilih Jumlah "); int jumlah =  scanner.nextInt() ;
                             list_pesanan.put(pilih, jumlah); 
-                            System.out.println(list_pesanan);
                             System.out.println("Pesanan telah dimasukkan");
                             break;
             
