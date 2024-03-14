@@ -1,0 +1,25 @@
+========================
+Binar Fud
+========================
+
+Terima kasih sudah memesan
+di BinarFud
+
+Dibawah ini adalah pesanan anda
+
+Es Jeruk       5         25000     
+Es Teh Manis   4         52000     
+Nasi + Ayam    3         54000     
+Mie Goreng     2         26000     
+Nasi Goreng    1         15000     
+----------------------------+
+Total        15     172000
+
+
+
+Pembayaran : BinarCash
+
+========================
+Simpan struk ini sebagai
+bukti pembayaran
+========================
