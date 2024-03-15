@@ -22,7 +22,7 @@ public class project {
     public static void list_menu(){
         System.out.println("Silahkan pilih makanan :");
         for (Menu m : menu) {
-            System.out.println(m.getId() + ". " + m.getNama() + "   | " + m.getHarga());
+            System.out.println(m.getId() + ". " + m.getNama() + "\t| " + m.getHarga());
         }
         System.err.println("99. Pesan dan Bayar");
         System.err.println("0. Keluar Aplikasi");
@@ -41,14 +41,14 @@ public class project {
             int quantity = list_pesanan.get(id);
             for (Menu m : menu){
                 if (m.getId()==id){
-                    // text = text +m.getNama()+"      "+quantity+"        "+quantity*m.getHarga()+"\n";
-                    text = text+String.format("%-15s%-10s%-10s\n", m.getNama(), quantity, quantity * m.getHarga());
+                    text = text +m.getNama()+"\t"+quantity+"\t"+quantity*m.getHarga()+"\n";
+                    // text = text+String.format("%-15s%-10s%-10s\n", m.getNama(), quantity, quantity * m.getHarga());
                 }                        
             }
 
         }   
-        text = text +"----------------------------+\n";
-        text = text +String.format("Total        %d     %d\n\n", jumlah_quantity, jumlah_harga)+
+        text = text +"---------------------------------+\n";
+        text = text +"Total\t\t"+jumlah_quantity+"\t"+jumlah_harga+
                     "\n\nPembayaran : BinarCash\n\n"+
                     "========================\n"+
                     "Simpan struk ini sebagai\n"+
@@ -111,14 +111,14 @@ public class project {
                         int quantity = list_pesanan.get(id);
                         for (Menu m : menu){
                             if (m.getId()==id){
-                                System.out.println( m.getNama()+" " + quantity +" " +quantity*m.getHarga());
+                                System.out.println( m.getNama()+"\t" + quantity +"\t" +quantity*m.getHarga());
                                 jumlah_quantity+=quantity;
                                 jumlah_harga+=quantity*m.getHarga();
                             }                        
                         }
                     }    
-                    System.out.println("-------------------+");
-                    System.out.println("Total       "+jumlah_quantity+"    "+jumlah_harga);
+                    System.out.println("---------------------------------+");
+                    System.out.println("Total\t\t"+jumlah_quantity+"\t"+jumlah_harga);
                     System.out.println("1. Konfirmasi dan bayar");
                     System.out.println("2. Kembali ke menu utama");
                     System.out.println("0. Keluar aplikasi");
