@@ -6,7 +6,7 @@ import java.util.UUID;
 import com.example.xx2.model.Merchant;
 
 public interface MerchantService {
-    // List<Merchant> getMerchantList();
+    List<Merchant> getMerchantList();
     Merchant create(Merchant merchant);
     Merchant edit(Merchant merchant, String open);
     Merchant getMerchant(UUID uuid);

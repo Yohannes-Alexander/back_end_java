@@ -7,12 +7,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.example.xx2.model.Merchant;
 import com.example.xx2.repository.MerchantRepository;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 import java.util.Optional;
 @Service
 public class MerchantServiceImpl implements MerchantService{
 
     @Autowired
     MerchantRepository merchantRepository;
+
+    @Override
+    public List<Merchant> getMerchantList() {
+        return merchantRepository.findAll();
+    }
 
     @Override
     public Merchant create(Merchant merchant){
@@ -35,6 +42,11 @@ public class MerchantServiceImpl implements MerchantService{
         }
         return merchantOptional.get();
 
+    }
+
+    public Object getCinemaList() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getCinemaList'");
     }
 
 
