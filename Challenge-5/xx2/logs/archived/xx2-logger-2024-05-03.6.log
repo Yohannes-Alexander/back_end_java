@@ -1,0 +1,49 @@
+2024-05-03 20:48:49,566 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-03 20:48:49,571 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-03 20:48:49,577 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-03 20:48:57,740 INFO o.s.b.StartupInfoLogger [main] Starting Xx2Application using Java 17.0.10 with PID 17368 (C:\Users\Asus\Downloads\BINAR\back_end_java\Challenge-4\xx2\target\classes started by Asus in C:\Users\Asus\Downloads\BINAR\back_end_java\Challenge-4\xx2)
+2024-05-03 20:48:57,744 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-03 20:48:58,889 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-03 20:48:58,993 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 78 ms. Found 5 JPA repository interfaces.
+2024-05-03 20:49:00,163 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-03 20:49:00,194 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-03 20:49:00,201 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-05-03 20:49:00,203 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-03 20:49:00,359 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-05-03 20:49:00,364 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2529 ms
+2024-05-03 20:49:00,829 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-03 20:49:00,990 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-03 20:49:01,045 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-03 20:49:01,298 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-03 20:49:01,340 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-03 20:49:01,745 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@72fb989b
+2024-05-03 20:49:01,750 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-03 20:49:01,821 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-03 20:49:03,012 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-03 20:49:03,116 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-03 20:49:03,127 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'merchantController': Unsatisfied dependency expressed through field 'merchantService': No qualifying bean of type 'com.example.xx2.service.MerchantService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-05-03 20:49:03,128 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-03 20:49:03,132 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-05-03 20:49:03,136 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-05-03 20:49:03,139 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2024-05-03 20:49:03,156 INFO o.s.b.a.l.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-03 20:49:03,192 ERROR o.s.b.d.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field merchantService in com.example.xx2.controller.MerchantController required a bean of type 'com.example.xx2.service.MerchantService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.xx2.service.MerchantService' in your configuration.
+
