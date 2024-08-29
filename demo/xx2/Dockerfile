@@ -1,0 +1,3 @@
+FROM 
+EXPOSE 8080
+ADD /target

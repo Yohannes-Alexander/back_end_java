@@ -1,0 +1,57 @@
+package com.example.xx2.security.jwt;
+
+import com.example.xx2.security.service.UserDetailsImpl;
+import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.Authentication;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
+
+import java.security.Key;
+import java.util.Date;
+
+@Component
+public class JwtUtils {
+    @Value("${security.jwt.secret-key}")
+    private String secretKey;
+
+    @Value("${security.jwt.expiration-time}")
+    private long jwtExpiration;
+    
+    public String generateToken(Authentication authentication) {
+        String username;
+        if (authentication.getPrincipal() instanceof UserDetailsImpl userPrincipal) {
+            username = userPrincipal.getUsername();
+        } 
+        // else if (authentication.getPrincipal() instanceof OidcUser oidcUser) {
+        //     username = oidcUser.getEmail();
+        // }  else if (authentication.getPrincipal() instanceof DefaultOAuth2User defaultOAuth2User) {
+        //     username = defaultOAuth2User.getAttribute("login");
+        // }
+        else {
+            throw new IllegalArgumentException("Unsupported principal type");
+        }
+        Date now = new Date();
+        return Jwts.builder()
+                .setSubject(username)
+                .setIssuedAt(now)
+                .setExpiration(new Date(now.getTime()+jwtExpiration))
+                .signWith(getSignKey(), SignatureAlgorithm.HS256)
+                .compact();
+    }
+    public String getUsername(String jwt) {
+        return Jwts.parserBuilder()
+                .setSigningKey(getSignKey()).build()
+                .parseClaimsJws(jwt)
+                .getBody()
+                .getSubject();
+    }
+
+    private Key getSignKey() {
+        byte[] keyBytes= Decoders.BASE64.decode(secretKey);
+        return Keys.hmacShaKeyFor(keyBytes);
+        // return Keys.hmacShaKeyFor(secretKey.getBytes());
+    }
+}

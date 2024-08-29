@@ -1,0 +1,31 @@
+2024-06-24 21:32:24,543 INFO o.s.b.StartupInfoLogger [main] Starting Xx2Application using Java 17.0.10 with PID 26892 (C:\Users\Asus\Downloads\BINAR\back_end_java\demo\xx2\target\classes started by Asus in C:\Users\Asus\Downloads\BINAR\back_end_java\demo\xx2)
+2024-06-24 21:32:24,547 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-24 21:32:25,604 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24 21:32:25,696 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 76 ms. Found 5 JPA repository interfaces.
+2024-06-24 21:32:26,661 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-06-24 21:32:26,701 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:32:26,711 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-06-24 21:32:26,713 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-24 21:32:26,890 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-06-24 21:32:26,892 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2268 ms
+2024-06-24 21:32:27,236 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-24 21:32:27,381 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-24 21:32:27,446 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-24 21:32:27,732 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-24 21:32:27,773 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-24 21:32:28,079 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@296676c4
+2024-06-24 21:32:28,081 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-24 21:32:28,147 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-24 21:32:29,233 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-24 21:32:29,330 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:32:30,062 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-24 21:32:31,116 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 63dd6c91-d97a-4093-a68b-1645282659ff
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-06-24 21:32:31,384 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b395ee, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24facb47, org.springframework.security.web.context.SecurityContextHolderFilter@2e895acb, org.springframework.security.web.header.HeaderWriterFilter@3c89fdd8, org.springframework.web.filter.CorsFilter@6020cd42, org.springframework.security.web.csrf.CsrfFilter@4f96e484, org.springframework.security.web.authentication.logout.LogoutFilter@5069a91b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3431cb1f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@546ca9da, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2b68c59b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4a9d6eb9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5889e697, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c3d1214, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@326d39fd, org.springframework.security.web.access.ExceptionTranslationFilter@54c1878b, org.springframework.security.web.access.intercept.AuthorizationFilter@4d1f6e1c]
+2024-06-24 21:32:31,490 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:32:31,562 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-06-24 21:32:31,592 INFO o.s.b.StartupInfoLogger [main] Started Xx2Application in 7.585 seconds (process running for 8.103)
