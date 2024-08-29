@@ -1,0 +1,30 @@
+2024-05-06 21:55:10,813 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-06 21:55:10,818 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-06 21:55:10,821 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-06 21:55:23,048 INFO o.s.b.StartupInfoLogger [main] Starting Xx2Application using Java 17.0.10 with PID 23032 (C:\Users\Asus\Downloads\BINAR\back_end_java\Challenge-4\xx2\target\classes started by Asus in C:\Users\Asus\Downloads\BINAR\back_end_java\Challenge-4\xx2)
+2024-05-06 21:55:23,051 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-06 21:55:23,954 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-06 21:55:24,057 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 91 ms. Found 5 JPA repository interfaces.
+2024-05-06 21:55:25,452 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-05-06 21:55:25,480 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-06 21:55:25,495 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-05-06 21:55:25,498 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-06 21:55:25,615 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-05-06 21:55:25,618 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2493 ms
+2024-05-06 21:55:26,047 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-06 21:55:26,176 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-06 21:55:26,256 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-06 21:55:26,559 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-06 21:55:26,593 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-06 21:55:26,874 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23b71d24
+2024-05-06 21:55:26,876 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-06 21:55:26,949 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-06 21:55:28,300 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-06 21:55:28,419 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-06 21:55:29,240 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-06 21:55:29,987 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-06 21:55:30,047 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8081 (http) with context path ''
+2024-05-06 21:55:30,065 INFO o.s.b.StartupInfoLogger [main] Started Xx2Application in 7.8 seconds (process running for 8.316)
+2024-05-06 21:55:33,600 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-06 21:55:33,601 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-05-06 21:55:33,602 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-2] Completed initialization in 1 ms

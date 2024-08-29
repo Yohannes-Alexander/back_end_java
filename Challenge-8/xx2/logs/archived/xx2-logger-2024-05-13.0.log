@@ -1,0 +1,19 @@
+2024-05-13 20:51:44,326 INFO o.s.b.StartupInfoLogger [main] Starting Xx2ApplicationTests using Java 17.0.10 with PID 34756 (started by Asus in C:\Users\Asus\Downloads\BINAR\back_end_java\Challenge-5\xx2)
+2024-05-13 20:51:44,329 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-13 20:51:45,537 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-13 20:51:45,627 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 80 ms. Found 5 JPA repository interfaces.
+2024-05-13 20:51:46,408 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-13 20:51:46,510 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-13 20:51:46,554 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-13 20:51:47,028 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-13 20:51:47,085 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-13 20:51:47,381 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63dc3420
+2024-05-13 20:51:47,384 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-13 20:51:47,462 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-13 20:51:48,795 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-13 20:51:48,942 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-13 20:51:50,151 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-13 20:51:51,101 INFO o.s.b.StartupInfoLogger [main] Started Xx2ApplicationTests in 7.187 seconds (process running for 8.376)
+2024-05-13 20:51:51,831 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-13 20:51:51,834 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-13 20:51:51,838 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
